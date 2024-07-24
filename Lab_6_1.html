@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_6_1</title>
+</head>
+<body>
+    <button onclick="bg()">StrtBG</button>
+    <button onclick="stopbg()">stop</button>
+    <button onclick="fontcolor()"></button>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt cum asperiores necessitatibus numquam accusamus impedit provident quaerat eveniet id deserunt eligendi, perspiciatis sit, amet quo ullam voluptatum nihil natus vero?
+    </p>
+
+
+    <script>
+        function bg(){
+            a=setInterval(backgroundcolor,100)
+        }
+        function backgroundcolor(){
+            r= Math.ceil(Math.random()*255)
+            g=Math.ceil(Math.random()*255)
+            b=Math.ceil(Math.random()*255)
+            document.body.style.background="rgb("+r+","+g+","+b+")"
+            //document.body.style.background=a[i]
+            }
+
+        function stopbg(){
+            clearInterval(a)
+        }
+        function fontcolor(){
+            setInterval(fontcolor,100)
+        }
+            
+        
+
+    </script>
+</body>
+</html>

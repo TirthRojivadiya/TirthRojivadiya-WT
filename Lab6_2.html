@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id="click1" onclick="singleclick()">Single Click</button>
+	<button id="click2" ondblclick ="doubleclick()">Double Click</button>
+
+	<script type="text/javascript">
+		let singleclick = ()=>{
+		
+			document.getElementById("click1").style.color='red';
+		}
+		
+
+		let doubleclick = ()=>{
+			document.getElementById("click2").style.color='black';
+		}
+	</script>
+</body>
+</html>

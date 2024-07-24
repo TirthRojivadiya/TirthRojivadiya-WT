@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input[type="button"]{
+            width: 50px;
+            height: 50px;
+            
+        }
+        .enter{
+            width: 104px;
+
+        }
+       .input {
+        width: 150px;
+
+        }
+        .c{
+            height: 55px;
+
+        }
+        .btn{
+            color: brown;
+            background-color: aqua;
+
+        }
+        #btn{
+            color:brown;
+            background-color:aqua;
+
+
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+
+        <tr>
+            <td>
+                <input type=""name="" class="input" id="dis">
+                <input type="button"name="" onclick="clr()" onkeydown="click(event)" value="C" class="c" id="btn"  >
+
+        
+ </td>
+            </tr>
+            <tr>
+                <td>
+        <input type="button" onclick="dis('7')" onkeydown="click(event)" name="" value="7" class="btn">
+        <input type="button" onclick="dis('8')" onkeydown="click(event)" name="" value="8" class="btn">
+        <input type="button" onclick="dis('9')" onkeydown="click(event)" name="" value="9" class="btn">
+        <input type="button" onclick="dis('+')" onkeydown="click(event)" name="" value="+" class="btn">
+
+     </td>
+                </tr>
+                <tr>
+                    <td>
+            <input type="button"  onclick="dis('4')" onkeydown="click(event)" name="" value="4" class="btn">
+            <input type="button" onclick="dis('5')" onkeydown="click(event)" name="" value="5" class="btn">
+            <input type="button"  onclick="dis('6')" onkeydown="click(event)"name="" value="6" class="btn">
+            <input type="button"  onclick="dis('-')" onkeydown="click(event)" name="" value="-" class="btn">
+    
+         </td>
+                    </tr>
+                    <tr>
+                        <td>
+                <input type="button"  onclick="dis('1')" onkeydown="click(event)" name="" value="1" class="btn">
+                <input type="button"  onclick="dis('2')" onkeydown="click(event)" name="" value="2" class="btn">
+                <input type="button"  onclick="dis('3')" onkeydown="click(event)" name="" value="3" class="btn">
+                <input type="button"  onclick="dis('*')" onkeydown="click(event)" name="" value="*" class="btn">
+        
+             </td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <input type="button" onclick="dis('0')" onkeydown="click(event)" name="" value="0" class="btn">
+                    <input type="button"  onclick="dis('enter')" onkeydown="click(event)" name="" value="enter" class="input">
+                    <input type="button" onclick="dis('/')" onkeydown="click(event)" name="" value="/" class="btn">
+                   
+                 </td>
+                            </tr>
+                            </table>
+                            <script>
+                                function dis(n){
+                                    document.getElementById('dis').value+=n
+
+                                }
+                                function clr(){
+                                    document.getElementById('dis').value=""
+                                }
+                                function click(){
+                                    ifevent.key==1||event.key==2
+
+                                }
+                            
+
+                            
+                            </script>
+
+    
+</body>
+</html>

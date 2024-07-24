@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let faculty=[
+
+            {
+            name:'arjun',
+            id:123456,
+            department:'cs',
+        },
+        {
+            name:'daxa',
+            id:23456,
+            department:'cs',
+        },
+        {
+            name:'ronit',
+            id:56789,
+            department:'bca',
+        },
+        {
+            name:'tirth',
+            id:56789,
+            department:'cse',
+        },
+        {
+            name:'manan',
+            id:78906,
+            department:'cse',
+        }
+    ];
+
+    for(obj of faculty){
+        document.write("<table border=1>");
+        document.write("<tr>");
+        document.write("<td>"+obj.name+"</td>");
+        document.write("<td>"+obj.id+"</td>");
+        document.write("<td>"+obj.department+"</td>");
+        document.write("</tr>");
+        document.write("</table>");
+    }
+    </script>
+</body>
+</html>
